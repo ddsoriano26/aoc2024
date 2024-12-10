@@ -26,12 +26,9 @@ if __name__ == "__main__":
     left_list = []
     right_list = []
 
-    # print(lines)
     for line in lines:
         numbers = line.strip('\n').split('   ')
         left_list.append(int(numbers[0]))
         right_list.append(int(numbers[1]))
 
-    # print(left_list)
-    # print(right_list)
     print(get_total_distance(left_list, right_list))
